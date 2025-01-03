@@ -1,27 +1,52 @@
+# Blob
 - type: entity
+  id: BlobRule
   parent: BaseGameRule
-  id: Changeling
+  categories: [ HideSpawnMenu ]
   components:
-  - type: ChangelingRule
+  - type: BlobRule
+
+- type: entity
+  id: BlobGameMode
+  parent: BaseGameRule
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: BlobRule
   - type: GameRule
     minPlayers: 15
-    delay:
-      min: 30
-      max: 60
-  - type: AntagObjectives
-    objectives:
-    - ChangelingStealDNAObjective
-    - EscapeIdentityObjective
-    - ChangelingSurviveObjective
+    delay: # 7-10 minutes
+      min: 420
+      max: 600
   - type: AntagSelection
-    agentName: changeling-roundend-name
     definitions:
-    - prefRoles: [ Changeling ]
-      max: 6
-      playerRatio: 10
-      lateJoinAdditional: true
+    - prefRoles: [ Blob ]
+      min: 1
+      max: 2
+      playerRatio: 40 #players = 2 blobs
+      allowNonHumans: true
       blacklist:
         components:
         - AntagImmune
+      briefing:
+        text: blob-carrier-role-greeting
+        color: Plum
+        sound: /Audio/Announcements/bloblarm.ogg
       mindRoles:
-      - MindRoleChangeling
+      - MindRoleBlob
+
+- type: entity
+  id: BlobSpawn
+  parent: BaseGameRule
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StationEvent
+    weight: 15
+    duration: 1
+    earliestStart: 50
+    minimumPlayers: 20
+    maxOccurrences: 2
+  - type: BlobSpawnRule
+    carrierBlobProtos:
+    - SpawnPointGhostBlobRat
+    playersPerCarrierBlob: 30
+    maxCarrierBlob: 2
