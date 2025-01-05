@@ -95,3 +95,6 @@ trait-basicfrench-desc = You speak with the cadence of someone who has cast off 
 
 trait-basicrussian-name = Russian (Basic)
 trait-basicrussian-desc = You speak with a russian accent, with much less word replacements.
+
+trait-grayspeak-name = Grayspeak
+trait-grayspeak-desc = Mo talk like everyone else does. Mou speech mochigi completely normal. 

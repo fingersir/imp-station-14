@@ -1,0 +1,9 @@
+# grayspeak for all..
+- type: trait
+  id: Gray
+  name: trait-grayspeak-name
+  description: trait-grayspeak-desc
+  category: SpeechTraits
+  cost: 2
+  components:
+  - type: GrayAccent
