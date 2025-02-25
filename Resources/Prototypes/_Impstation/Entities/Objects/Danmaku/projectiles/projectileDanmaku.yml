@@ -16,7 +16,6 @@
   - type: Ammo
     muzzleFlash: null
   - type: Projectile
-    impactEffect: BulletImpactEffectKinetic
     damage:
       types:
         Heat: 5
@@ -77,7 +76,7 @@
   components:
   - type: ProjectileSpread
     proto: danmakuBullet
-    count: 5 #65 heat damage if you hit all your shots, but wide spread
+    count: 5 #to make the bullets lay out correctly, divide 360 by your number and subtract the result from it
     spread: 285
 
     

@@ -89,9 +89,9 @@
   - type: Gun
     projectileSpeed: 10
     minAngle: 0
-    maxAngle: 0
-    angleIncrease: 360
-    angleDecay: 0 
+    maxAngle: 5
+    angleIncrease: 15
+    angleDecay: 10
     fireRate: 15
     selectedMode: FullAuto
     availableModes:
