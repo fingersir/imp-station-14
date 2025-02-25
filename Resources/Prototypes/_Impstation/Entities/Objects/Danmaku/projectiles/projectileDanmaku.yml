@@ -1,0 +1,84 @@
+- type: entity
+  id: danmakuBullet
+  name: danmakuBullet
+  parent: BaseBullet
+  description: Not too bad, but you still don't want to get hit by it.
+  components:
+  - type: Reflective
+    reflective:
+      - Energy
+  - type: Sprite
+    noRot: false
+    sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
+    layers:
+      - state: magicm_red
+        shader: unshaded
+  - type: Ammo
+    muzzleFlash: null
+  - type: Projectile
+    impactEffect: BulletImpactEffectKinetic
+    damage:
+      types:
+        Heat: 5
+  # Short lifespan
+  - type: TimedDespawn
+    lifetime: 10
+
+
+- type: entity
+  id: danmakuTurretBullet
+  name: autofiring Danmaku
+  parent: BaseBullet
+  description: Not too bad, but you still don't want to get hit by it.
+  components:
+  - type: CombatMode
+  - type: Reflective
+    reflective:
+      - Energy
+  - type: Sprite
+    noRot: false
+    sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
+    layers:
+      - state: magicm_red
+        shader: unshaded
+  - type: Ammo
+    muzzleFlash: null
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: HTN
+    rootTask:
+      task: SimpleRangedHostileCompound
+  - type: ProjectileBatteryAmmoProvider
+    proto: danmakuSpreadBullet5
+    fireCost: 100
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 100
+  - type: Gun
+    projectileSpeed: 3
+    fireRate: 1000
+    useKey: false
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/taser2.ogg
+  - type: Projectile
+    impactEffect: BulletImpactEffectKinetic
+    damage:
+      types:
+        Heat: 5
+  # Short lifespan
+  - type: TimedDespawn
+    lifetime: 10
+
+- type: entity
+  name: danmaku spread pattern
+  id: danmakuSpreadBullet5
+  categories: [ HideSpawnMenu ]
+  parent: danmakuBullet
+  components:
+  - type: ProjectileSpread
+    proto: danmakuBullet
+    count: 5 #65 heat damage if you hit all your shots, but wide spread
+    spread: 285
+
+    
+
