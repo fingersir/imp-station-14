@@ -27,6 +27,7 @@
     - BaseStationNanotrasen
     - BaseStationMail # Nyano component, required for station mail to function
     - BaseStationStockMarket # DeltaV
+    - BaseStationAlternateDimension
   categories: [ HideSpawnMenu ]
   components:
     - type: Transform

@@ -37,4 +37,8 @@
     - Power
   - type: StealTarget #imp
     stealGroup: Generator
+    guides: [ Singularity, Power ]
+  - type: Tag
+    tags:
+    - ShadowSideLootEpic
 
