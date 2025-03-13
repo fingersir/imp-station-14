@@ -97,7 +97,7 @@ public sealed class SpawnAlternateDimensionJob : Job<bool>
             {
                 if (!_tag.HasTag(tagged.Owner, replacement.Key))
                     continue;
-                var coord = new EntityCoordinates(_mapSystem.GetMap(_alternateMapId), tagged.Comp2.Coordinates.Position);
+                var coord = new EntityCoordinates(_alternateGrid, tagged.Comp2.Coordinates.Position);
                 _entManager.SpawnEntity(replacement.Value, coord);
                 break;
             }
