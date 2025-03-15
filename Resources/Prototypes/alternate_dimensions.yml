@@ -14,6 +14,9 @@
     Window: ShadowDimensionFillSpawner
     Pipe: ShadowDimensionFillSpawner
     Table: TableStoneChromite
+    Door: DoorCosmicCult
+    Machine: CosmicObelisk
+    Computer: CosmicChair
     # Loot zone
     ShadowSideLoot: ShadowDimensionLootSpawner
     ShadowSideLootEpic: ShadowDimensionEpicLootSpawner
@@ -23,16 +26,12 @@
   defaultTile: FloorChromite
   mapComponents:
   - type: Parallax
-    parallax: 
+    parallax: TrainStation
   gridComponents:
   - type: Gravity
     enabled: true
     inherent: true
   replacements:
-    Wall: ShadowDimensionBarrierSpawner
-    Window: ShadowDimensionFillSpawner
-    Pipe: ShadowDimensionFillSpawner
-    Table: TableStoneChromite
-    # Loot zone
-    ShadowSideLoot: ShadowDimensionLootSpawner
-    ShadowSideLootEpic: ShadowDimensionEpicLootSpawner
+    Wall: Wall
+    Pipe: CableApcExtension
+    Machine: CosmicObelisk
