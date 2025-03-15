@@ -172,6 +172,7 @@
     tags:
       - Airlock
       # This tag is used to nagivate the Airlock construction graph. It's needed because the construction graph is shared between Airlock, AirlockGlass, and HighSecDoor
+      - Door #imp edit
   - type: PryUnpowered
   - type: BlockWeather
   - type: GuideHelp
@@ -231,3 +232,4 @@
     tags:
       - GlassAirlock
       # This tag is used to nagivate the Airlock construction graph. It's needed because the construction graph is shared between Airlock, AirlockGlass, and HighSecDoor
+      - Door #imp edit

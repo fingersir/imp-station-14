@@ -15,6 +15,9 @@
   id: CleanerGrenade
 
 - type: Tag
+  id: Computer
+
+- type: Tag
   id: ConversionKitFA
 
 - type: Tag
@@ -30,6 +33,9 @@
   id: DecapoidGenericTag
 
 - type: Tag
+  id: Door
+
+- type: Tag
   id: DionaMinded
 
 - type: Tag
@@ -40,6 +46,9 @@
 
 - type: Tag
   id: HolyArrow
+
+- type: Tag
+  id: Machine
 
 - type: Tag
   id: MagazineBR

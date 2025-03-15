@@ -65,6 +65,7 @@
     blacklist:
       tags:
       - NoConsoleSound
+      - Computer #imp edit
   - type: ContainerContainer
     containers:
       board: !type:Container
