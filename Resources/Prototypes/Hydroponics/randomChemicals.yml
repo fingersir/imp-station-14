@@ -11,6 +11,7 @@
     - BuzzochloricBees
     - BrosochloricBros
     - Stimulants
+    - ExoticReagent # Funkychem
   - quantity: 5
     weight: 1
     reagents:
@@ -32,6 +33,8 @@
     - ChangelingSting
     - CogChamp
     - JuiceThatMakesYouWeh
+    - Convermol # Funkychem - decent medicine
+    - Pestiline # Funkychem - decent toxin
   - quantity: 5
     weight: 2
     reagents:
@@ -63,6 +66,7 @@
     reagents:
     - Bicaridine
     - Dermaline
+    - SalicylicAcid # Funkychem
     - Ephedrine
     - NorepinephricAcid
     - Tricordrazine
@@ -96,7 +100,7 @@
     weight: 3.5
     reagents:
     - Vitamin
-    - Kelotane
+    - Dexalin # Funkychem - replace kelotane with dexalin, we already have burns elsewhere
     - Inaprovaline
     - Oil
     - Slime
